@@ -1,104 +1,166 @@
-public class RestaurantMenuManagement {
+// public class MenuDisplay {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         System.out.println("Complete Menu: " + menu);
+//     }
+// }
 
-    public static void main(String[] args) {
 
-        // Original Menu
-        String menu = "Pizza, Burger, Pasta, Sandwich";
 
-        // 1. Display the complete menu
-        System.out.println("1. Complete Menu:");
-        System.out.println(menu);
+// public class MenuCase {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         System.out.println("Uppercase: " + menu.toUpperCase());
+//         System.out.println("Lowercase: " + menu.toLowerCase());
+//     }
+// }
 
-        // 2. Print menu in uppercase and lowercase
-        System.out.println("\n2. Menu in Uppercase:");
-        System.out.println(menu.toUpperCase());
 
-        System.out.println("\nMenu in Lowercase:");
-        System.out.println(menu.toLowerCase());
 
-        // 3. Add a new food item (Fries)
-        menu = menu.concat(", Fries");
-        System.out.println("\n3. Menu after adding Fries:");
-        System.out.println(menu);
 
-        // 4. Find the position of Pasta
-        int position = menu.indexOf("Pasta");
-        System.out.println("\n4. Position of 'Pasta': " + position);
 
-        // 5. Replace Burger with Wrap
-        menu = menu.replace("Burger", "Wrap");
-        System.out.println("\n5. Menu after replacing Burger with Wrap:");
-        System.out.println(menu);
+// public class MenuAddItem {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         menu = menu + ", Fries";
+//         System.out.println("Menu after adding Fries: " + menu);
+//     }
+// }
 
-        // 6. Extract only the word Sandwich
-        int start = menu.indexOf("Sandwich");
-        String word = menu.substring(start, start + "Sandwich".length());
-        System.out.println("\n6. Extracted word:");
-        System.out.println(word);
 
-        // 7. Display the first five characters
-        System.out.println("\n7. First five characters:");
-        System.out.println(menu.substring(0, 5));
 
-        // 8. Split menu and print each item
-        System.out.println("\n8. Individual Food Items:");
-        String[] items = menu.split(", ");
+// public class MenuFindItem {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         int index = menu.indexOf("Pasta");
+//         System.out.println("Position of Pasta: " + index);
+//     }
+// }
 
-        for (String item : items) {
-            System.out.println(item);
-        }
 
-        // 9. Compare "Pizza" and "pizza"
-        System.out.println("\n9. Comparing \"Pizza\" and \"pizza\":");
 
-        System.out.println("== : " + ("Pizza" == "pizza"));
-        System.out.println("equals(): " + "Pizza".equals("pizza"));
-        System.out.println("equalsIgnoreCase(): " + "Pizza".equalsIgnoreCase("pizza"));
 
-        System.out.println("\nExplanation:");
-        System.out.println("== compares references.");
-        System.out.println("equals() compares exact text (case-sensitive).");
-        System.out.println("equalsIgnoreCase() ignores letter case.");
 
-        // 10. Compare Pizza and Pasta
-        System.out.println("\n10. compareTo() result:");
-        int compare = "Pizza".compareTo("Pasta");
-        System.out.println(compare);
 
-        if (compare > 0)
-            System.out.println("Pizza comes after Pasta alphabetically.");
-        else if (compare < 0)
-            System.out.println("Pizza comes before Pasta alphabetically.");
-        else
-            System.out.println("Both strings are equal.");
+// public class MenuReplaceItem {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         menu = menu.replace("Burger", "Wrap");
+//         System.out.println("Updated Menu: " + menu);
+//     }
+// }
 
-        // 11. Convert integer value 299 to String
-        int price = 299;
-        String priceString = String.valueOf(price);
 
-        System.out.println("\n11. Today's Special Price:");
-        System.out.println("Today's Special Price: " + priceString);
 
-        // 12. Count total food items
-        System.out.println("\n12. Total Food Items:");
-        System.out.println(items.length);
 
-        // 13. Check if a food item exists
-        java.util.Scanner sc = new java.util.Scanner(System.in);
+// public class MenuExtractItem {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         int index = menu.indexOf("Sandwich");
+//         String sandwich = menu.substring(index, index + "Sandwich".length());
+//         System.out.println("Extracted word: " + sandwich);
+//     }
+// }
 
-        System.out.print("\n13. Enter food item to search: ");
-        String search = sc.nextLine();
 
-        if (menu.toLowerCase().contains(search.toLowerCase())) {
-            System.out.println(search + " is available in the menu.");
-        } else {
-            System.out.println(search + " is NOT available in the menu.");
-        }
 
-        // 14. Final updated menu
-        System.out.println("\n14. Final Updated Menu:");
-        System.out.println(menu);
 
-        sc.close();
-    }
-}
+// public class MenuSubstring {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         System.out.println("First five characters: " + menu.substring(0, 5));
+//     }
+// }
+
+
+
+
+// public class MenuSplit {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         String[] items = menu.split(", ");
+//         for (String item : items) {
+//             System.out.println(item);
+//         }
+//     }
+// }
+
+
+
+
+// public class MenuCompareStrings {
+//     public static void main(String[] args) {
+//         String str1 = "Pizza";
+//         String str2 = "pizza";
+//         System.out.println("Using == : " + (str1 == str2));
+//         System.out.println("Using equals() : " + str1.equals(str2));
+//         System.out.println("Using equalsIgnoreCase() : " + str1.equalsIgnoreCase(str2));
+//     }
+// }
+
+
+
+
+// public class MenuCompareTo {
+//     public static void main(String[] args) {
+//         String str1 = "Pizza";
+//         int result = str1.compareTo("Pasta");
+//         System.out.println("Pizza compareTo Pasta: " + result);
+//         System.out.println("Explanation: Positive means 'Pizza' comes after 'Pasta' in dictionary order.");
+//     }
+// }
+
+
+
+// public class MenuPrice {
+//     public static void main(String[] args) {
+//         int price = 299;
+//         String priceStr = String.valueOf(price);
+//         System.out.println("Today's Special Price: " + priceStr);
+//     }
+// }
+
+
+
+// public class MenuCountItems {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+//         String[] items = menu.split(", ");
+//         System.out.println("Total food items: " + items.length);
+//     }
+// }
+
+
+
+// import java.util.Scanner;
+
+// public class MenuSearchItem {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String menu = "Pizza, Burger, Pasta, Sandwich";
+        
+//         System.out.print("Enter a food item to search: ");
+//         String userFood = sc.nextLine();
+        
+//         if (menu.contains(userFood)) {
+//             System.out.println(userFood + " is available in the menu.");
+//         } else {
+//             System.out.println(userFood + " is NOT available in the menu.");
+//         }
+        
+//         sc.close();
+//     }
+// }
+
+
+
+
+// public class MenuUpdated {
+//     public static void main(String[] args) {
+//         String menu = "Pizza, Wrap, Pasta, Sandwich, Fries";
+//         System.out.println("Updated Menu: " + menu);
+//     }
+// }
+
+
+
